@@ -5,7 +5,7 @@ import { isAuthenticate } from '../auth';
 
 const AdminDashboard = () => {
   const {
-    user: { _id, name, email, role },
+    user: { name, email, role },
   } = isAuthenticate();
 
   const adminLinks = () => {
